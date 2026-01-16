@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --- MENU TABS LOGIC ---
     const tabButtons = document.querySelectorAll('.tab-btn');
     const menuCategories = document.querySelectorAll('.menu-category');
@@ -13,15 +13,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // 2. Add active state to clicked
                 btn.classList.add('active');
-                
+
                 // 3. Show target category
                 const targetId = btn.getAttribute('data-target');
                 const targetCategory = document.getElementById(targetId);
                 if (targetCategory) {
                     targetCategory.classList.add('active');
-                    
-                    // Auto-scroll to content if it's barely visible? 
-                    // No, let's keep it simple.
+
+                    // Auto-scroll to top of list
+                    const tabsContainer = document.querySelector('.sticky-tabs');
+                    if (tabsContainer) {
+                        // Get position relative to viewport + current scroll
+                        // We scroll so the tabs sit at the top of the screen
+                        const yOffset = -5; // Small buffer
+                        const y = tabsContainer.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+
                     // Just a small haptic feedback if available
                     if (navigator.vibrate) {
                         navigator.vibrate(10); // 10ms 'crunch'
@@ -34,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- CRUNCHY CLICKS ---
     // Add distinct visual/haptic feedback to all primary actions
     const actionableElements = document.querySelectorAll('.btn-cta, .menu-item, .social-link');
-    
+
     actionableElements.forEach(el => {
-        el.addEventListener('click', function(e) {
+        el.addEventListener('click', function (e) {
             // Visual Flash
             this.style.filter = 'brightness(1.5)';
             setTimeout(() => {
