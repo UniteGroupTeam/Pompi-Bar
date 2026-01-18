@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Digital | Pompi Bar</title>
+    <title>Menú | Pompi Bar</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://i.imgur.com/cEymKSd.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Menú Digital | Pompi Bar">
+    <meta property="og:title" content="Menú | Pompi Bar">
     <meta property="og:description"
-        content="Checa nuestras especialidades: Hamburguesas, alitas, micheladas y litros. ¡Ven al barrio!">
+        content="Checa nuestro menú: Hamburguesas, alitas, micheladas y litros de azulitos.">
     <meta property="og:image" content="https://i.imgur.com/cEymKSd.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Menú Digital | Pompi Bar">
+    <meta property="twitter:title" content="Menú | Pompi Bar">
     <meta property="twitter:description" content="Hamburguesas, alitas, micheladas y azulitos en CDMX.">
     <meta property="twitter:image" content="https://i.imgur.com/cEymKSd.png">
 
@@ -33,37 +33,6 @@
     <style>
         body {
             padding-bottom: 50px;
-        }
-
-        /* Hide prices in menu.html */
-        .menu-item-price {
-            display: none;
-        }
-
-        .bg-banner-cta {
-            background: linear-gradient(45deg, var(--neon-blue), var(--neon-green));
-            color: #000;
-            padding: 20px;
-            margin: 20px 0;
-            text-align: center;
-            border-radius: 10px;
-            font-family: var(--font-heading);
-            font-size: 1.2rem;
-            animation: pulse-border 2s infinite;
-        }
-
-        @keyframes pulse-border {
-            0% {
-                box-shadow: 0 0 0 0 rgba(0, 243, 255, 0.7);
-            }
-
-            70% {
-                box-shadow: 0 0 0 10px rgba(0, 243, 255, 0);
-            }
-
-            100% {
-                box-shadow: 0 0 0 0 rgba(0, 243, 255, 0);
-            }
         }
     </style>
 </head>
@@ -89,14 +58,6 @@
 
     <div class="container">
 
-        <!-- Banner for Prices -->
-        <div class="bg-banner-cta">
-            <i class="fas fa-qrcode"></i><br>
-            PRECIOS DISPONIBLES AL ESCANEAR EL QR EN SUCURSAL<br>
-            <span style="font-size: 0.9rem; font-family: var(--font-body); font-weight: normal;">¡Cáele al barrio para
-                conocer las promos!</span>
-        </div>
-
         <!-- ==================== COMIDA ==================== -->
         <div id="comida" class="menu-category active">
             <h2 class="menu-section-title">PARA EL BAJÓN 🍔</h2>
@@ -109,6 +70,7 @@
                     <span style="font-size: 0.9rem; color: #999;">La OG. Carne jugosa, vegetales frescos y sazón
                         casero.</span>
                 </div>
+                <div class="menu-item-price">$75</div>
             </div>
 
             <div class="menu-item">
@@ -116,6 +78,7 @@
                     <strong>Con Queso Mozarela</strong>
                     <span style="font-size: 0.9rem; color: #999;">Derretido sobre la carne, como debe ser.</span>
                 </div>
+                <div class="menu-item-price">$85</div>
             </div>
 
             <div class="menu-item">
@@ -123,6 +86,7 @@
                     <strong>Sencilla con Tocino</strong>
                     <span style="font-size: 0.9rem; color: #999;">El toque crujiente que tu vida necesita.</span>
                 </div>
+                <div class="menu-item-price">$85</div>
             </div>
 
             <div class="menu-item">
@@ -130,6 +94,7 @@
                     <strong>Pompi Hawaiana</strong>
                     <span style="font-size: 0.9rem; color: #999;">Piña asada y jamón. O la amas o la odias.</span>
                 </div>
+                <div class="menu-item-price">$95</div>
             </div>
 
             <div class="menu-item">
@@ -137,6 +102,7 @@
                     <strong>Doble Carne</strong>
                     <span style="font-size: 0.9rem; color: #999;">Para los valientes. Doble placer carnívoro.</span>
                 </div>
+                <div class="menu-item-price">$120</div>
             </div>
 
             <div class="menu-item">
@@ -144,6 +110,7 @@
                     <strong>Doble Carne con Queso</strong>
                     <span style="font-size: 0.9rem; color: #999;">La jefa de jefas. Atascada y deliciosa.</span>
                 </div>
+                <div class="menu-item-price">$130</div>
             </div>
 
             <div class="menu-subsection-title">Otros Antojos</div>
@@ -154,6 +121,7 @@
                     <span style="font-size: 0.9rem; color: #999;">El fiel escudero. Salchicha de pavo y pan
                         suave.</span>
                 </div>
+                <div class="menu-item-price">$35</div>
             </div>
 
             <div class="menu-item">
@@ -161,6 +129,7 @@
                     <strong>Pompi Hocho con Tocino</strong>
                     <span style="font-size: 0.9rem; color: #999;">Mejorado con tiritas de felicidad.</span>
                 </div>
+                <div class="menu-item-price">$45</div>
             </div>
 
             <div class="menu-item">
@@ -169,6 +138,7 @@
                     <span style="font-size: 0.9rem; color: #999;">Queso y jamón en harina. El salvavidas
                         perfecto.</span>
                 </div>
+                <div class="menu-item-price">$35</div>
             </div>
         </div>
 
@@ -181,6 +151,7 @@
                     <strong>Boneles con Papas</strong>
                     <span style="font-size: 0.9rem; color: #999;">Trocitos de pollo bañados en tu salsa fav.</span>
                 </div>
+                <div class="menu-item-price">$85</div>
             </div>
 
             <div class="menu-item">
@@ -188,6 +159,7 @@
                     <strong>Papas a la Francesa</strong>
                     <span style="font-size: 0.9rem; color: #999;">Clásicas, doraditas y con sal.</span>
                 </div>
+                <div class="menu-item-price">$50</div>
             </div>
 
             <div class="menu-item">
@@ -195,6 +167,7 @@
                     <strong>Aros de Cebolla (7pzs)</strong>
                     <span style="font-size: 0.9rem; color: #999;">Empanizados y listos para chopear.</span>
                 </div>
+                <div class="menu-item-price">$50</div>
             </div>
 
             <div class="menu-item">
@@ -202,6 +175,7 @@
                     <strong>Banderillas</strong>
                     <span style="font-size: 0.9rem; color: #999;">Salchicha capeada. Un clásico de feria.</span>
                 </div>
+                <div class="menu-item-price">$35</div>
             </div>
         </div>
 
@@ -218,6 +192,7 @@
                     <strong>Blue Demon (Normal/Bubbaloo)</strong>
                     <span style="font-size: 0.9rem; color: #999;">El famoso AZULITO. Sabor Mora o Bubbaloo Uva.</span>
                 </div>
+                <div class="menu-item-price">$145</div>
             </div>
 
             <div class="menu-item">
@@ -225,6 +200,7 @@
                     <strong>Sky (Citrus / Green)</strong>
                     <span style="font-size: 0.9rem; color: #999;">Cítrico, fresco y pegador.</span>
                 </div>
+                <div class="menu-item-price">$145</div>
             </div>
 
             <div class="menu-item">
@@ -232,6 +208,7 @@
                     <strong>Chupi Fresa / Apple / Purple</strong>
                     <span style="font-size: 0.9rem; color: #999;">Bebidas frutales cargadas de flow.</span>
                 </div>
+                <div class="menu-item-price">$145</div>
             </div>
 
             <div class="menu-item">
@@ -240,6 +217,7 @@
                     <span style="font-size: 0.9rem; color: #999;">Frutos Rojos, Maracuyá, Kiwi, Mango, Blueberry,
                         Pepino.</span>
                 </div>
+                <div class="menu-item-price">$145</div>
             </div>
 
             <div class="menu-item">
@@ -248,6 +226,7 @@
                     <span style="font-size: 0.9rem; color: #999;">Cereza, Blueberry o Manzana Verde. Granizado
                         asesino.</span>
                 </div>
+                <div class="menu-item-price">$145</div>
             </div>
 
             <div class="menu-item">
@@ -255,6 +234,7 @@
                     <strong>Lady Drink</strong>
                     <span style="font-size: 0.9rem; color: #999;">Frambuesa o Violeta. Dulce pero peligroso.</span>
                 </div>
+                <div class="menu-item-price">$145</div>
             </div>
 
             <div class="menu-item">
@@ -262,6 +242,7 @@
                     <strong>Caribe Drink / Frisk Melón</strong>
                     <span style="font-size: 0.9rem; color: #999;">Tropicales para sentirte en la playa.</span>
                 </div>
+                <div class="menu-item-price">$155</div>
             </div>
 
             <div class="menu-item">
@@ -269,6 +250,7 @@
                     <strong>Paloma</strong>
                     <span style="font-size: 0.9rem; color: #999;">Tequila y toronja. No falla.</span>
                 </div>
+                <div class="menu-item-price">$145</div>
             </div>
 
             <div class="menu-subsection-title">Cerveza Sabor (1 Lt)</div>
@@ -278,6 +260,7 @@
                     <span style="font-size: 0.9rem; color: #999;">Tamarindo, Mango, Fresa o Mora. Tu chela
                         tuneada.</span>
                 </div>
+                <div class="menu-item-price">$145</div>
             </div>
 
             <div class="menu-subsection-title">Preparados 1/2 Litro</div>
@@ -288,18 +271,21 @@
                     <span style="font-size: 0.9rem; color: #999;">Piña Colada, Tinto de Verano, Gin Frutos Rojos,
                         Whisky.</span>
                 </div>
+                <div class="menu-item-price">$135</div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-info">
                     <strong>Kalimotxo</strong>
                     <span style="font-size: 0.9rem; color: #999;">Vino tinto y refresco de cola.</span>
                 </div>
+                <div class="menu-item-price">$110</div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-info">
                     <strong>Clamato Preparado</strong>
                     <span style="font-size: 0.9rem; color: #999;">La cura para la cruda.</span>
                 </div>
+                <div class="menu-item-price">$100</div>
             </div>
 
         </div>
@@ -315,11 +301,13 @@
                     <span style="font-size: 0.9rem; color: #999;">Corona, Victoria, Pacífico, Ultra, Negra
                         Modelo.</span>
                 </div>
+                <div class="menu-item-price">$45</div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-info">
                     <strong>Heineken (473ml)</strong>
                 </div>
+                <div class="menu-item-price">$50</div>
             </div>
 
             <div class="menu-subsection-title">Preparadas</div>
@@ -328,24 +316,28 @@
                     <strong>Michelada (500ml)</strong>
                     <span style="font-size: 0.9rem; color: #999;">Escarchado de la casa, limón y sal.</span>
                 </div>
+                <div class="menu-item-price">$100</div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-info">
                     <strong>Cubana (500ml)</strong>
                     <span style="font-size: 0.9rem; color: #999;">Salsas negras y limón.</span>
                 </div>
+                <div class="menu-item-price">$100</div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-info">
                     <strong>Clama Pompi (500ml)</strong>
                     <span style="font-size: 0.9rem; color: #999;">Con Clamato especial.</span>
                 </div>
+                <div class="menu-item-price">$130</div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-info">
                     <strong>Cerveza Litro</strong>
-                    <span style="font-size: 0.9rem; color: #999;">Pa' la sed grande.</span>
+                    <span style="font-size: 0.9rem; color: #999;">Pa' la sed grande. (Preparada: $145)</span>
                 </div>
+                <div class="menu-item-price">$125</div>
             </div>
 
             <div class="menu-item">
@@ -353,11 +345,13 @@
                     <strong>Cubetazo</strong>
                     <span style="font-size: 0.9rem; color: #999;">Corona y Victoria. Pa' compartir con la banda.</span>
                 </div>
+                <div class="menu-item-price">$220</div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-info">
                     <strong>Cerillos (355ml)</strong>
                 </div>
+                <div class="menu-item-price">$60</div>
             </div>
         </div>
 
@@ -370,6 +364,7 @@
                     <strong>Refrescos</strong>
                     <span style="font-size: 0.9rem; color: #999;">Coca Cola, Sidral, Agua Mineral (600ml).</span>
                 </div>
+                <div class="menu-item-price">$30</div>
             </div>
 
             <div class="menu-item">
@@ -378,6 +373,7 @@
                     <span style="font-size: 0.9rem; color: #999;">Mandarina, Manzana, Frambuesa, Maracuyá. (Estilo
                         Alemán).</span>
                 </div>
+                <div class="menu-item-price">$45</div>
             </div>
 
             <div class="menu-item">
@@ -385,34 +381,29 @@
                     <strong>Aguas de Sabor (1/2 Lt)</strong>
                     <span style="font-size: 0.9rem; color: #999;">Limón/Chía, Cítricos, Coco/Nuez, Horchata...</span>
                 </div>
+                <div class="menu-item-price">$30</div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-info">
                     <strong>Aguas de Sabor (1 Lt)</strong>
                     <span style="font-size: 0.9rem; color: #999;">Para bajar la comida.</span>
                 </div>
+                <div class="menu-item-price">$50</div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-info">
                     <strong>Sangría Preparada (Sin Alcohol)</strong>
                     <span style="font-size: 0.9rem; color: #999;">Refrescante y deliciosa.</span>
                 </div>
+                <div class="menu-item-price">$120</div>
             </div>
             <div class="menu-item">
                 <div class="menu-item-info">
                     <strong>Suero</strong>
                     <span style="font-size: 0.9rem; color: #999;">Agua mineral con sal y limón.</span>
                 </div>
+                <div class="menu-item-price">$60</div>
             </div>
-        </div>
-
-        <!-- Location CTA -->
-        <div style="text-align: center; margin: 40px 0;">
-            <a href="https://www.google.com/maps/dir/?api=1&destination=Lorenzo+Boturini+1621b,Aeronautica+Militar,Venustiano+Carranza,15970+Ciudad+de+México,CDMX"
-                target="_blank" class="btn-cta"
-                style="background-color: var(--neon-blue); color: #000; font-size: 1.2rem; clip-path: none; border-radius: 5px;">
-                <i class="fas fa-location-arrow"></i> ¡LLEVAME AL BAR! 📍
-            </a>
         </div>
 
     </div>
